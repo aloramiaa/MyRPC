@@ -47,6 +47,12 @@ This project sets a custom Discord Rich Presence using `discord.js-selfbot-v13`,
   - `TOKEN`: your Discord self token
 - **Deploy**. After it’s live, copy the service URL, e.g. `https://your-app.onrender.com/`.
 
+### Deploy with Docker (Alternative)
+- If your Render service expects a Dockerfile build, this repo now includes a `Dockerfile`.
+- Create a Web Service (Docker) and point to this repo.
+- Set env var `TOKEN` in Render.
+- Build and deploy. The container exposes port 3000 and binds to Render `PORT` automatically.
+
 ### UptimeRobot Ping
 - Create a new HTTPS monitor in UptimeRobot.
 - **URL**: `https://your-app.onrender.com/healthz`
